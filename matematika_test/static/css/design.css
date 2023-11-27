@@ -1,0 +1,29 @@
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+th, td{
+    border: 1px solid rgb(112, 157, 216);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    color: black;
+}
+td{
+    font-weight:bolder;
+    font-style:inherit;
+}
+.column {
+    float: left;
+    width: 25%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/design.css' %}">
+    <title>My Document</title>
+</head>
+<body>
+    <table>
+    <div class="row">
+        <div class="column"></div>
+        <th>Addition</th>
+        <tr>
+            <th>Number1</th>
+            <th>Operator</th>
+            <th>Number2</th>
+            <th>Answer</th>
+          </tr>
+    {% for number in add%}
+    <tr>
+        <td>{{number.number1}}</td>
+        <td>   +   </td>
+        <td>{{number.number2}}</td>
+        <td>{{number.javob}}</td>
+    </tr>
+    {% endfor %}
+    </div>
+    </table>
+    <div class="row">
+        <div class="column"></div>
+    <table>
+        <th>Subtraction</th>
+        <tr>
+            <th>Number1</th>
+            <th>Operator</th>
+            <th>Number2</th>
+            <th>Answer</th>
+          </tr>
+    {% for number in minus%}
+    <tr>
+        <td>{{number.number1}}</td>
+        <td>   -   </td>
+        <td>{{number.number2}}</td>
+        <td>{{number.javob}}</td>
+    </tr>
+    {% endfor %}
+    </div>
+    </table>
+    <table>
+        <th>Multiplication</th>
+        <tr>
+            <th>Number1</th>
+            <th>Operator</th>
+            <th>Number2</th>
+            <th>Answer</th>
+          </tr>
+    {% for number in multi%}
+    <tr>
+        <td>{{number.number1}}</td>
+        <td>    *    </td>
+        <td>{{number.number2}}</td>
+        <td>{{number.javob}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    <table>
+        <th>Division</th>
+        <tr>
+            <th>Number1</th>
+            <th>Operator</th>
+            <th>Number2</th>
+            <th>Answer</th>
+          </tr>
+    {% for number in division%}
+    <tr>
+        <td>{{number.number1}}</td>
+        <td>   /    </td>
+        <td>{{number.number2}}</td>
+        <td>{{number.javob}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>
